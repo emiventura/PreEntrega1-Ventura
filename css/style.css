@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+/**ESTILO  CONTACTO.HTML**/
+.bodycontact{
+    background-image: url(../assets/img/veterinario.jpg);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    margin: 0;
+}
+form{
+   width: 450px;
+   margin: auto;
+   background: rgba(41, 1, 32, 0.671); 
+   padding: 10px 20px;
+   box-sizing: border-box;
+   margin-top: 20px;
+   border-radius: 7px;
+}
+.h2contact{
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: monospace;
+}
+input,textarea{
+    font-family: monospace;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.boton{
+    background: #99059e;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+}
+.boton:hover{
+    
+    cursor: pointer;
+    opacity: 0.5;
+    transform: scale(1.1);
+}
+.contac{
+    margin-bottom: 30px;
+}
+/*-------------------------------------*/
+/*ESTILO HEADER*/
+.header{
+    background-color: #99059e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+.header .logo{
+    cursor: pointer;
+}
+.header .logo img{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+.header .nav-links{
+    list-style: none;
+}
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+.header .nav-links li:hover{
+    transform: scale(1.1);
+}
+.header .nav-links a{
+    font-size: 700;
+    color:white;
+    text-decoration: none;
+}
+
+/**ESTILO FOOTER **/
+.piedepagina{
+    background-color: #99059e;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    height: 85px;
+    padding: 5px 10%;
+}
+
+.piedepagina .logoi{
+    cursor: pointer;
+}
+.piedepagina .logoi img{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+.piedepagina .logot img{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.piedepagina .logoi img:hover{
+    transform: scale(1.2);
+}
+.piedepagina .logot img:hover{
+    transform: scale(1.2);
+}
+.textored{
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 20px;
+    font-size: 700px;
+    color:white;
+    text-decoration: none;
+}
+/*Estilo imagen "Nosotros" */
+.fotoclinica{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;;
+}
+/*Estilo lorem index.html */
+.plorem{
+    background-color: #f5c2f75e;
+}
+/*Estilo pagina servicios*/
+.servicios{
+    height: 100vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFBEE;
+}
+    
+.cartas-servicios{
+    display: flex;   
+    gap: 50px;
+}
+.foto-servicio{
+    width: 300px;
+
+}
+
+.Baño {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+
+.Paseos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.Guardería{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/*Estilo pagina tienda*/
+.cartas-tienda{
+    justify-content: space-around;
+    display: flex;   
+    gap: 50px;
+    margin: 80px 0;
+}
+.Alimentos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.Juguetes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.foto-alimento{
+    width: 300px;
+
+}
+.foto-juguete{
+    width: 300px;
+
+}
