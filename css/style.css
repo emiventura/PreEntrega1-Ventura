@@ -63,7 +63,7 @@ textarea{
 }
 /*-------------------------------------*/
 /*ESTILO HEADER*/
-.header{
+/*.header{
     background-color: #99059e;
     display: flex;
     justify-content: space-between;
@@ -97,6 +97,59 @@ textarea{
     color:white;
     text-decoration: none;
 }
+*/ 
+header {
+    display: flex;
+    background-color: #99059e;
+    
+
+    padding: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-bottom: 2px solid black;
+}
+.logo {
+    display: flex;     
+}
+
+.logo img{
+    height: 100px;
+}
+
+.navBar{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    font-weight: 600;
+    flex-wrap: wrap;
+}
+
+.navBar a{
+    text-decoration: none;
+    color:black
+    
+}
+
+.navBar ul :hover{
+    color: blue;
+    border-bottom: solid red;
+}
+
+.navBar ul li{
+    list-style: none;
+}
+
+.navBar ul{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.nombre-empresa{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
 /**ESTILO FOOTER **/
 .piedepagina{
@@ -107,7 +160,11 @@ textarea{
     height: 85px;
     padding: 5px 10%;
 }
-
+.piedepagina .logo-social{
+    display:flex;
+    
+    gap: 40px;
+}
 .piedepagina .logoi{
     cursor: pointer;
 }
@@ -139,10 +196,11 @@ textarea{
 /*Estilo imagen "Nosotros" */
 .fotoclinica{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: auto;;
+    width: auto;
+    height: auto;
 }
 /*Estilo lorem index.html */
 .plorem{
@@ -218,4 +276,33 @@ textarea{
 .foto-juguete{
     width: 300px;
 
+}
+@media screen and (max-width: 375px){
+    .piedepagina {
+        display:flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .logo-social{
+        display: flex;
+        justify-content: space-around;
+        
+    }
+   .piedepagina .logot img{
+        height: 50px;
+    }
+    .piedepagina .logoi img{
+        height: 50px;
+    }
+}
+/*APLICANDO UN GRID */
+@media (max-width: 768px){  
+    .cartas-tienda{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .fotoclinica img{
+        width: 80%;
+        position: relative;
+    }
 }
